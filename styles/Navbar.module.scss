@@ -18,11 +18,9 @@
     color: #fff;
     text-decoration: none;
 
-    &.active {
-      background-color: rgba(218, 182, 23, 0.4);
-    }
+    &.active,
     &:hover {
-      background-color: rgba(145, 62, 62, 0.4);
+      background-color: rgba(0, 0, 0, 0.4);
     }
   }
 }

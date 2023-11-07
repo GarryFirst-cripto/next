@@ -4,16 +4,16 @@ import Heading from "../../components/Heading";
 
 export const getStaticProps = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-  const posts = await response.json();
+  const data = await response.json();
 
-  if (!posts) {
+  if (!data) {
     return {
       notFound: true,
     }
   }
 
   return {
-    props: { posts },
+    props: { posts: data },
   }
 };
 

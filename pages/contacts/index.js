@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
   }
 };
 
-const Contacts = ({ contacts }) => {
+const Contacts = ({ contacts }) => { 
   return (
     <>
       <Head>
